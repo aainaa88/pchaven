@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our selection of gaming PCs, laptops, and computer accessories">
+    <title>Products - PC Haven</title>
+    <link id="theme-style" rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <h1>PC Haven</h1>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" aria-current="page">Products</a></li>
+            </ul>
+        </nav>
+        <button id="theme-switcher" class="theme-toggle" aria-label="Toggle theme">
+            Switch Theme
+        </button>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <h2>Our Products</h2>
+            
+            <div class="filters" aria-label="Product filters">
+                <form id="filter-form" class="filter-form">
+                    <div class="filter-group">
+                        <label for="search-filter">Search:</label>
+                        <input 
+                            type="search" 
+                            id="search-filter" 
+                            name="search" 
+                            placeholder="Search products..."
+                            aria-label="Search through products"
+                            autocomplete="off"
+                        >
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="category-filter">Category:</label>
+                        <select id="category-filter" name="category">
+                            <option value="all">All Categories</option>
+                            <option value="gaming">Gaming PCs</option>
+                            <option value="laptop">Laptops</option>
+                            <option value="accessory">Accessories</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="sort-by">Sort by:</label>
+                        <select id="sort-by" name="sort">
+                            <option value="name">Name</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <button type="button" id="clear-filters" class="clear-filters-btn">
+                            Clear Filters
+                        </button>
+                    </div>
+                </form>
+
+                <div class="view-controls">
+                    <button id="view-toggle" class="view-toggle" aria-label="Toggle view">
+                        <span class="toggle-text">Table View</span>
+                        <svg class="toggle-icon grid" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/>
+                        </svg>
+                    </button>
+                </div>                
+            </div>
+
+            <div class="products-container">
+                <div id="product-list" class="product-grid" aria-live="polite">
+    <div class="loading-indicator" aria-hidden="true">
+        Loading products...
+    </div>
+</div>
+</div>
+            </div>
+
+            <nav class="pagination" aria-label="Product navigation">
+                <div id="pagination-controls">
+                    <!-- Pagination will be dynamically loaded here -->
+                </div>
+            </nav>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h2>PC Haven</h2>
+                <p>Your trusted source for quality PC hardware</p>
+            </div>
+            <div class="footer-contact">
+                <p>Contact us: <a href="mailto:info@pceinventory.com">info@pchaven.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">123-456-7890</a></p>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2025 PC Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Template for product cards (hidden) -->
+    <template id="product-card-template">
+        <article class="product-card">
+            <div class="product-image-container">
+                <img class="product-image" src="" alt="" width="300" height="300">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title"></h3>
+                <p class="product-description"></p>
+                <p class="product-price"></p>
+            </div>
+        </article>
+    </template>
+
+    <script src="js/themeSwitcher.js"></script>
+    <script src="js/loadProducts.js"></script>
+</body>
+</html>

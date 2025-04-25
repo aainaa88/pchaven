@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PC Haven - Your one-stop shop for gaming PCs, laptops, and accessories">
+    <title>PC Haven - Home</title>
+    <link id="theme-style" rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <h1>PC Haven</h1>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li class="products-dropdown">
+                    <a href="products.html">Products</a>
+                </li>
+            </ul>
+        </nav>
+        <button id="theme-switcher" class="theme-toggle" aria-label="Toggle theme">
+            Switch Theme
+        </button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to PC Haven</h2>
+            <p>Discover our extensive range of high-performance computers, gaming rigs, and accessories. 
+               Built for enthusiasts, gamers, and professionals.</p>
+        </section>
+
+        <section class="category-preview" aria-label="Product categories">
+    <h2>Our Categories</h2>
+    <div class="category-grid">
+        <a href="products.html?category=gaming" class="category-card-link">
+            <article class="category-card">
+                <img src="images/gaming-pc.avif" alt="High-performance gaming computer setup" width="400" height="300">
+                <h3>Gaming PCs</h3>
+                <p>Custom-built gaming rigs for ultimate performance</p>
+            </article>
+        </a>
+
+        <a href="products.html?category=laptop" class="category-card-link">
+            <article class="category-card">
+                <img src="images/laptop.webp" alt="Professional laptop computer" width="400" height="300">
+                <h3>Laptops</h3>
+                <p>Portable computing solutions for work and play</p>
+            </article>
+        </a>
+
+        <a href="products.html?category=accessory" class="category-card-link">
+            <article class="category-card">
+                <img src="images/accessories.avif" alt="Computer accessories including keyboard and mouse" width="400" height="300">
+                <h3>Accessories</h3>
+                <p>Essential peripherals and gaming accessories</p>
+            </article>
+        </a>
+    </div>
+</section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h2>PC Haven</h2>
+                <p>Your trusted source for quality PC hardware</p>
+            </div>
+            <div class="footer-contact">
+                <p>Contact us: <a href="mailto:info@pceinventory.com">info@pchaven.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">123-456-7890</a></p>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2025 PC Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/themeSwitcher.js"></script>
+    <script src="js/loadProducts.js"></script>
+</body>
+</html>
