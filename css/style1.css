@@ -137,12 +137,12 @@ body {
 }
 
 .footer-contact a {
-    color: #3498db;
-    text-decoration: none;
+  color: #00BFFF; /* Deep Sky Blue */
+  text-decoration: none;
 }
 
 .footer-contact a:hover {
-    text-decoration: underline;
+  color: #FFFFFF; /* White on hover */
 }
 
 /* View toggle controls */
